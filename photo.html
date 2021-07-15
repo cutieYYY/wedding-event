@@ -1,0 +1,83 @@
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./styles/story.css">
+    <title>Mary & Gregory</title>
+</head>
+<body>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <ul class="links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="party.html">Wedding Party</a></li>
+      <li><a href="photo.html">Photos</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+    <div>
+       
+            <!-- Toast Notification -->
+​
+        <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 10px;">
+​
+        <!-- Then put toasts within -->
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" id="myToast"  >
+            <div class="toast-header" style="background-color: darkseagreen;">
+                
+                <strong class="mr-auto">Memory Event</strong>
+                <small>One Moment Ago</small>
+                <button type="button" class="ml-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="toast-body">
+                New image has been added to your memory!
+            </div>
+            </div>
+        </div>
+
+        <div style="display: flex;" class="main" >
+          <!-- autoplay controls playsinline -->
+          <video id="video" width="640" height="480" autoplay></video>
+          <canvas id="canvas" width="640" height="480"></canvas>
+      </div>
+​
+​        
+        <div style="padding: 25px;">
+            <button id="snap" class="btn btn-success" >Capture</button>
+            <button id="getPics" class="btn btn-success">Get all Memories</button>
+            <button id="uploadImage" class="btn btn-primary">Upload Memory</button>
+        </div>
+        <div> 
+            <div id="output" class="row" style="padding-left: 20px; padding-right: 20px;">
+​
+            </div>
+        </div>
+    </div>
+​
+    
+<script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+​
+    <!-------------- FIREBASE LIBRARIES------------------------------------->
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+    
+    <script src="scriptF.js"></script>
+​
+</script>    
+​
+</body>
+​
+</html>
