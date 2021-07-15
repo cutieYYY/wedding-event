@@ -25,7 +25,12 @@
     </label>
   </nav>
     <div>
-       
+      <div style="display: flex;" class="main" >
+        <!-- autoplay controls playsinline -->
+        <video id="video" width="640" height="480" autoplay></video>
+        <canvas id="canvas" width="640" height="480"></canvas>
+    </div>
+​
             <!-- Toast Notification -->
 ​
         <div aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center" style="min-height: 10px;">
@@ -46,12 +51,7 @@
             </div>
         </div>
 
-        <div style="display: flex;" class="main" >
-          <!-- autoplay controls playsinline -->
-          <video id="video" width="640" height="480" autoplay></video>
-          <canvas id="canvas" width="640" height="480"></canvas>
-      </div>
-​
+        
 ​        
         <div style="padding: 25px;">
             <button id="snap" class="btn btn-success" >Capture</button>
